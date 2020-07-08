@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DDOJA | Asesores</title>
+	<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+	<link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+	<link rel="stylesheet" href="{% static 'css/inner-navs.css' %}">
+</head>
+
+<body>
+	<div class="social-networks">
+		<a href="https://www.instagram.com/DdojaLegal/" target="blank"><i class="fa fa-instagram" style="color:#504B40;"></i></a>
+		<a href="https://www.facebook.com/DDOJA-Legal-Services-Consultants-1045311252276564/" target="blank"><i class="fa fa-facebook" style="color:#504B40;"></i></a>
+		<a href="https://twitter.com/DdojaLegal/" target="blank"><i class="fa fa-twitter" style="color:#504B40;"></a></i>
+	</div>
+
+	<nav class="navbar navbar-default navbar-static-top inner-serction">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand navbar-link" href="{% url 'home' %}"><img src="{% static 'img/logo2.png' %}" class="brand-img"></a>
+				<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+			</div>
+			<div class="collapse navbar-collapse" id="navcol-1">
+				<ul class="nav navbar-nav nav-desktop">
+					<li role="presentation"><a href="{% url 'home' %}">INICIO </a></li>
+					<li role="presentation"><a href="{% url 'about_us' %}" class="inner-item">QUIENES SOMOS</a></li>
+					<li role="presentation"><a href="#">NUESTROS ASESORES</a></li>
+					<li role="presentation"><a href="{% url 'services' %}">SERVICIOS </a></li>
+					<li role="presentation"><a href="{% url 'consulting' %}">CONSULTA LEGAL</a></li>
+					<li role="presentation"><a href="{% url 'courses' %}">CAPACITACIÓN </a></li>
+					<li role="presentation"><a href="{% url 'contact_us' %}">CONTÁCTANOS </a></li>
+				</ul>
+				<ul class="nav navbar-nav nav-tablet">
+					<li role="presentation"><a href="{% url 'home' %}">INICIO </a></li>
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="{% url 'about_us' %}">QUIENES SOMOS<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li role="presentation"><a href="{% url 'about_us' %}">NOSOTROS </a></li>
+							<li role="presentation"><a href="#">NUESTROS ASESORES</a></li>
+							<li role="presentation"><a href="{% url 'services' %}">SERVICIOS </a></li>
+						</ul>
+					</li>
+					<li role="presentation"><a href="{% url 'consulting' %}">CONSULTA LEGAL</a></li>
+					<li role="presentation"><a href="{% url 'courses' %}">CAPACITACIÓN </a></li>
+					<li role="presentation"><a href="{% url 'contact_us' %}">CONTÁCTANOS </a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="content-img"><img src="{% static 'img/expositores-banner.jpg' %}" class="img-responsive"></div>
+	<div>
+		<div class="container" style="margin-top:60px;">
+			<div class="row">
+				<div class="col-md-10 col-md-push-1">
+					<h3 class="lawyers-heading">GUSTAVO CALVINHO</h3>
+					<p class="content-description">Consultor internacional, abogado y experto en litigación, posee un doctorado en Derecho y una maestría en Derecho Procesal por la Universidad Nacional de Rosario. Adicionalmente, es Miembro Titular del Instituto Panamericano de Derecho Procesal. Actualmente, desempeña funciones como Coordinador del Departamento de Derecho Procesal Civil de la Universidad Austral de Buenos Aires.</p>
+					<p class="content-description">Es también Profesor Adjunto regular de la Facultad de Derecho de la Universidad de Buenos Aires y docente estable en la Maestría en Derecho Procesal (Universidad Nacional de Rosario, Santa Fe). Ha participado como Profesor Invitado a la Especialización en Derecho Procesal y Probatorio de la Universidad del Rosario (Bogotá, Colombia) y a la Especialización en Derecho Procesal de la Universidad Nacional de Córdoba (Argentina) y en varias universidades latinoamericanas.</p>
+					<p class="content-description"
+					style="border-bottom:2px solid rgb(200,196,189);padding-bottom:20px;">El doctor Calvinho es autor de cuatro libros y más de treinta artículos de doctrina, además de haber escrito otros tres libros como coautor y participado en obras colectivas. Sus trabajos de doctrina fueron publicados en Argentina, Bolivia, Brasil, Chile, Colombia, España, México, Paraguay, Perú y Uruguay. Ha dictado cursos y conferencias en Argentina, Bolivia, Brasil, Chile, Colombia, México, Paraguay, Perú y Uruguay.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div>
+		<div class="container" style="margin-top:30px;">
+			<div class="row">
+				<div class="col-md-10 col-md-push-1">
+					<h3 class="lawyers-heading">DIONOCIO RODRÍGUEZ</h3>
+					<p class="content-description">Licenciado en Derecho y Ciencias Políticas de la Universidad de Panamá. 2000. Magíster en Derecho Procesal por la Universidad Nacional de Rosario, Argentina.2006. Estudios Doctorales Completos en Derecho por la Universidad Nacional de Rosario, Argentina. Ha sido Profesor asistente en la Universidad de Panamá, en las Cátedras de Derecho Procesal Penal y Filosofía del Derecho. 2000-2002 y de la Cátedra de Derecho Procesal Penal I, Derecho Procesal Penal II y Procesal Constitucional  en la Universidad Latina de Panamá. 2004-2005.</p>
+					<p class="content-description">Profesor Titular de la cátedra de Derecho Penal de la Universidad Católica Santa María La Antigua. Profesor de la cátedra de Derecho Procesal Penal de la Universidad Católica Santa María La Antigua. Profesor Extranjero Invitado de la Maestría de Derecho Procesal de la Universidad Nacional de Rosario, en Argentina y Profesor Invitado de la Cátedra de Derecho Procesal Constitucional, Dirigidas por el Doctor Jorge Alejandro Amaya, en la Universidad de Buenos Aires, Argentina. Es Miembro Adherente del Instituto Panamericano de Derecho Procesal, desde el año 2002 hasta la fecha y Miembro Honorario y fundador de la Academia Latinoamericana de Derecho Procesal Garantista con Sede en Rosario Argentina.</p>
+					<p class="content-description" style="margin-bottom:50px;">Se ha desempeñado como Ministro de Desarrollo Social Encargado, Secretario General del Ministerio de Desarrollo Social, Director Nacional de Asesoría Legal del Ministerio de Desarrollo Social, Miembro de la Subcomisión Reformadora del Código Procesal Penal Panameño y del Código Penal en representación del Colegio Nacional de Abogados dentro de La Comisión de Estado Por la Justicia y Miembro del Instituto Panameño de Derecho Procesal Garantista. Es el actual Presidente del Colegio Nacional de Abogados y Socio fundador de I.L.S. Attorneys.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 list-container">
+					<ul>
+						<li><a href="{% url 'about_us' %}">Quiénes Somos</a></li>
+						<li><a href="{% url 'services' %}">servicios</a></li>
+						<li><a href="{% url 'consulting' %}">consulta legal</a></li>
+						<li><a href="{% url 'courses' %}">capacitación</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 list-container">
+					<ul>
+						<li><a href="{% url 'contact_us' %}">contáctanos</a></li>
+						<li><a href="#">notas legales</a></li>
+						<li><a href="#">términos y condiciones</a></li>
+						<li><a href="#">políticas de privacidad</a></li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<div class="row center-block">
+						<div class="col-md-12 logo-footer text-center"><img src="{% static 'img/logo-footer.png' %}" class="img-responsive center-block"></div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-md-push-1"><img src="{% static 'img/app-store.jpg' %}" class="center-block img-responsive"></div>
+						<div class="col-md-6 col-md-pull-1"><img src="{% static 'img/google-play.jpg' %}" class="center-block img-responsive"></div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<ul class="social-networks-footer">
+								<li class="social-networks-list-item"><a href="https://www.instagram.com/DdojaLegal/" target="blank"><i class="fa fa-instagram"></i></a></li>
+								<li class="social-networks-list-item"><a href="https://www.facebook.com/DDOJA-Legal-Services-Consultants-1045311252276564/" target="blank"><i class="fa fa-facebook"></i></a></li>
+								<li class="social-networks-list-item"><a href="https://twitter.com/DdojaLegal/" target="blank"><i class="fa fa-twitter"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>

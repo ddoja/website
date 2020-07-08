@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDOJA | Quiénes somos</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/inner-navs.css' %}">
+</head>
+
+<body>
+    <div class="social-networks">
+        <a href="https://www.instagram.com/DdojaLegal/" target="blank"><i class="fa fa-instagram" style="color:#504B40;"></i></a>
+        <a href="https://www.facebook.com/DDOJA-Legal-Services-Consultants-1045311252276564/" target="blank"><i class="fa fa-facebook" style="color:#504B40;"></i></a>
+        <a href="https://twitter.com/DdojaLegal/" target="blank"><i class="fa fa-twitter" style="color:#504B40;"></a></i>
+
+    </div>
+    <nav class="navbar navbar-default navbar-static-top inner-serction">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand navbar-link" href="{% url 'home' %}"><img src="{% static 'img/logo2.png' %}" class="brand-img"></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav nav-desktop">
+                    <li role="presentation"><a href="{% url 'home' %}">INICIO </a></li>
+                    <li class="active" role="presentation"><a href="#" class="inner-item">QUIENES SOMOS</a></li>
+                    <li role="presentation"><a href="{% url 'lawyers' %}">NUESTROS ASESORES</a></li>
+                    <li role="presentation"><a href="{% url 'services' %}">SERVICIOS </a></li>
+                    <li role="presentation"><a href="{% url 'consulting' %}">CONSULTA LEGAL</a></li>
+                    <li role="presentation"><a href="{% url 'courses' %}">CAPACITACIÓN </a></li>
+                    <li role="presentation"><a href="{% url 'contact_us' %}">CONTÁCTANOS </a></li>
+                </ul>
+                <ul class="nav navbar-nav nav-tablet">
+                    <li role="presentation"><a href="{% url 'home' %}">INICIO </a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">QUIENES SOMOS<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#">NOSOTROS </a></li>
+                            <li role="presentation"><a href="{% url 'lawyers' %}">NUESTROS ASESORES</a></li>
+                            <li role="presentation"><a href="{% url 'services' %}">SERVICIOS </a></li>
+                        </ul>
+                    </li>
+                    <li role="presentation"><a href="{% url 'consulting' %}">CONSULTA LEGAL</a></li>
+                    <li role="presentation"><a href="{% url 'courses' %}">CAPACITACIÓN </a></li>
+                    <li role="presentation"><a href="{% url 'contact_us' %}">CONTÁCTANOS </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-img"><img src="{% static 'img/ddoja-img.jpg' %}"></div>
+    <div class="main-description" style="margin-bottom:70px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-push-0" style="padding-left:60px;">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="content-description"><span class="text-distinction">DDOJA LEGAL SERVICES &amp; CONSULTANTS </span> es una firma de abogados&nbsp;y consultores que garantiza estar a tu lado cuando nos necesites,&nbsp;con profesionales expertos a tu disposición
+                                en tiempo real para orientarte,&nbsp;asesorarte, representarte, acompañarte y defenderte. Somos consultores&nbsp;de clase mundial, dispuestos a realizar estudios, análisis e informes técnicos&nbsp;para potenciar los resultados
+                                exitosos de tu caso o de tu empresa. </p>
+                            <h4 style="margin-top:20px;">SOCIOS </h4>
+                            <p style="font-size:18px;">MARIALINA DOMÍNGUEZ JAÉN - <span class="text-distinction">ABOGADA </span></p>
+                            <p style="font-size:18px;">CARLOS DURÁN SALAZAR - <span class="text-distinction">ABOGADO </span> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-md-push-1"><img src="{% static 'img/abogada-quienes-somos.jpg' %}"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container div-content" style="border-top:1.5px solid #C8C4BD; padding-top:60px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" style="border-right:2px solid rgb(200,196,189);height:250px;">
+                    <h4>MISIÓN: </h4>
+                    <p class="content-description">Ejercicio forense experto y de alta calidad dirigido a la defensa de los intereses del cliente, a la investigación científica y a la generación de propuestas técnicas.</p>
+                </div>
+                <div class="col-md-4 content" style="border-right:2px solid rgb(200,196,189);height:250px;">
+                    <h4>VISIÓN: </h4>
+                    <p class="content-description">Empresa líder en servicios forenses de investigación científica y consultoría.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>ÁREAS ESTRATÉGICAS: </h4>
+                    <p class="content-description">Posicionamiento en el mercado de servicios jurídicos en el ámbito local e internacional.</p>
+                    <ul style="list-style:none;line-height:2;margin-left:-40px;font-size:18px;">
+                        <li>Consultores </li>
+                        <li>Investigadores </li>
+                        <li>Capacitadores </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-img"><img src="{% static 'img/asesoria-experta.jpg' %}"></div>
+    <div style="margin:60px 0;">
+        <div class="container div-content">
+            <div class="row">
+                <div class="col-md-6" style="border-right:2px solid rgb(200,196,189);padding-left:150px;">
+                    <h4>NUESTROS SERVICIOS</h4>
+                    <ul class="content-list">
+                        <li>Consulta Legal On Line</li>
+                        <li>Chat </li>
+                        <li>Eventos Académicos</li>
+                        <li>Asesoría </li>
+                        <li>Defensa </li>
+                        <li>Consultoría </li>
+                    </ul>
+                </div>
+                <div class="col-md-6" style="padding-left:150px;">
+                    <h4>VALORES DE LA FIRMA</h4>
+                    <ul class="content-list">
+                        <li>Honestidad </li>
+                        <li>Formación </li>
+                        <li>Responsabilidad </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 list-container">
+                    <ul>
+                        <li><a href="#">Quiénes Somos</a></li>
+                        <li><a href="{% url 'services' %}">servicios</a></li>
+                        <li><a href="{% url 'consulting' %}">consulta legal</a></li>
+                        <li><a href="{% url 'courses' %}">capacitación</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 list-container">
+                    <ul>
+                        <li><a href="{% url 'contact_us' %}">contáctanos</a></li>
+                        <li><a href="#">notas legales</a></li>
+                        <li><a href="#">términos y condiciones</a></li>
+                        <li><a href="#">políticas de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="row center-block">
+                        <div class="col-md-12 logo-footer text-center"><img src="{% static 'img/logo-footer.png' %}" class="img-responsive center-block"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-md-push-1"><img src="{% static 'img/app-store.jpg' %}" class="center-block img-responsive"></div>
+                        <div class="col-md-6 col-md-pull-1"><img src="{% static 'img/google-play.jpg' %}" class="center-block img-responsive"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="social-networks-footer">
+                                <li class="social-networks-list-item"><a href="https://www.instagram.com/DdojaLegal/" target="blank"><i class="fa fa-instagram"></i></a></li>
+                                <li class="social-networks-list-item"><a href="https://www.facebook.com/DDOJA-Legal-Services-Consultants-1045311252276564/" target="blank"><i class="fa fa-facebook"></i></a></li>
+                                <li class="social-networks-list-item"><a href="https://twitter.com/DdojaLegal/" target="blank"><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>

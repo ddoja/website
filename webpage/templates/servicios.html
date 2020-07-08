@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDOJA | Servicios</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/inner-navs.css' %}">
+</head>
+
+<body>
+    <div class="social-networks">
+        <a href="https://www.instagram.com/DdojaLegal/" target="blank"><i class="fa fa-instagram" style="color:#504B40;"></i></a>
+        <a href="https://www.facebook.com/DDOJA-Legal-Services-Consultants-1045311252276564/" target="blank"><i class="fa fa-facebook" style="color:#504B40;"></i></a>
+        <a href="https://twitter.com/DdojaLegal/" target="blank"><i class="fa fa-twitter" style="color:#504B40;"></a></i>
+    </div>
+    <nav class="navbar navbar-default navbar-static-top inner-serction">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand navbar-link" href="{% url 'home' %}"><img src="{% static 'img/logo2.png' %}" class="brand-img"></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav nav-desktop">
+                    <li role="presentation"><a href="{% url 'home' %}">INICIO </a></li>
+                    <li role="presentation"><a href="{% url 'about_us' %}" class="inner-item">QUIENES SOMOS</a></li>
+                    <li role="presentation"><a href="{% url 'lawyers' %}">NUESTROS ASESORES</a></li>
+                    <li class="active" role="presentation"><a href="#">SERVICIOS </a></li>
+                    <li role="presentation"><a href="{% url 'consulting' %}">CONSULTA LEGAL</a></li>
+                    <li role="presentation"><a href="{% url 'courses' %}">CAPACITACIÓN </a></li>
+                    <li role="presentation"><a href="{% url 'contact_us' %}">CONTÁCTANOS </a></li>
+                </ul>
+                <ul class="nav navbar-nav nav-tablet">
+                    <li role="presentation"><a href="{% url 'home' %}">INICIO </a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="{% url 'about_us' %}">QUIENES SOMOS<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="{% url 'about_us' %}">NOSOTROS </a></li>
+                            <li role="presentation"><a href="{% url 'lawyers' %}">NUESTROS ASESORES</a></li>
+                            <li role="presentation"><a href="{% url 'services' %}">SERVICIOS </a></li>
+                        </ul>
+                    </li>
+                    <li role="presentation"><a href="{% url 'consulting' %}">CONSULTA LEGAL</a></li>
+                    <li role="presentation"><a href="{% url 'courses' %}">CAPACITACIÓN </a></li>
+                    <li role="presentation"><a href="{% url 'contact_us' %}">CONTÁCTANOS </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="content-img"><img src="{% static 'img/services-banner.jpg' %}" class="img-responsive"></div>
+    <div class="main-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7" style="border-bottom:2px solid rgb(200,196,189);padding-bottom:110px;">
+                    <h3 class="lawyers-heading" style="margin-top:100px;">ÁREAS DE DERECHO</h3>
+                    <p class="content-description">CONSTITUCIONAL, PROCESAL, CIVIL, MERCANTIL, EMPRESARIAL, LABORAL, PENAL (SPA), ADINISTRATIVO, COMPETENCIA Y ASUNTOS DEL CONSUMIDOR, AGRARIO, NOTARIADO, REGISTRAL, FISCAL - IMPUESTOS, MIGRATORIO, entre otras. </p>
+                </div>
+                <div class="col-md-5"><img src="{% static 'img/justice.jpg' %}" class="justice-img"></div>
+            </div>
+        </div>
+    </div>
+    <div style="padding-top:60px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <h4>CONSTITUCIONAL: </h4>
+                        <ul class="content-list-servicios">
+                            <li>Amparos de Garantía</li>
+                            <li>Hábeas Corpus</li>
+                            <li>Hábeas Data</li>
+                            <li>Inconstitucional </li>
+                        </ul>
+                    </div>
+                    <div class="service-item">
+                        <h4>FISCAL: </h4>
+                        <ul class="content-list-servicios">
+                            <li>Impuestos </li>
+                            <li>Donaciones </li>
+                        </ul>
+                    </div>
+                    <div class="service-item">
+                        <h4>ADMINISTRATIVO: </h4>
+                        <ul class="content-list-servicios">
+                            <li>Idoneidades </li>
+                            <li>Ambiente </li>
+                            <li>Demandas de Plena Jurisdicción</li>
+                            <li>Nulidad e Ilegalidad</li>
+                            <li>Indemnización contra el Estado</li>
+                            <li>Personería Jurídica ONG</li>
+                            <li>Exoneración de Impuestos</li>
+                            <li>Donaciones </li>
+                        </ul>
+                    </div>
+                    <div class="service-item">
+                        <h4>COMPETENCIA Y ASUNTOS DEL CONSUMIDOR: </h4>
+                        <ul class="content-list-servicios">
+                            <li>Demandas de Clase</li>
+                            <li>Marcas </li>
+                            <li>Propiedad Intelectual</li>
+                            <li>Responsabilidad del Constructor ante el consumidor</li>
+                        </ul>
+                    </div>
+                    <div class="service-item">
+                        <h4>REGISTRAL: </h4>
+                        <ul class="content-list-servicios">
+                            <li>Investigaciones </li>
+                            <li>Inscripciones </li>
+                            <li>Cancelaciones en el Registro Público</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <h4>CIVIL: </h4>
+                        <ul class="content-list-servicios">
+                            <li>Casación Civil</li>
+                            <li>Procesos Contenciosos Civiles de Mayor Cuantía</li>
+                            <li>Responsavilidad Civil</li>
+                            <li>Responsabilidad Médica</li>
+                            <li>Incumplimiento de Contratos</li>
+                            <li>Sucesiones </li>
+                            <li>Daño Moral</li>
+                        </ul>
+                    </div>
+                    <div class="service-item">
+                        <h4>FAMILIA: </h4>
+                        <ul class="content-list-servicios">
+                            <li>Divorcios </li>
+                            <li>Liquidación de Régimen Económico Matrimonial</li>
+                        </ul>
+                    </div>
+                    <div class="service-item">
+                        <h4>ARBITRAJE: </h4>
+                        <ul class="content-list-servicios">
+                            <li>Arbitraje en Derecho de todo tipo de conflictos civiles y mercantiles.</li>
+                        </ul>
+                    </div>
+                    <div class="service-item">
+                        <h4>PENAL: </h4>
+                        <ul class="content-list-servicios">
+                            <li>Denuncias </li>
+                            <li>Querellas </li>
+                            <li>Delitos contra la Administración Pública</li>
+                            <li>Contra la Fe Pública</li>
+                            <li>Contra la Propiedad Intelectual</li>
+                            <li>Tercería Incidental</li>
+                            <li>Responsabilidad Civil derivada del Delito</li>
+                        </ul>
+                    </div>
+                    <div class="service-item">
+                        <h4>MARÍTIMO: </h4>
+                        <ul class="content-list-servicios">
+                            <li>Procesos Marítimos en general.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <h4>MERCANTIL: </h4>
+                        <ul class="content-list-servicios">
+                            <li>Minutas </li>
+                            <li>Licencia Comercial</li>
+                            <li>Licencia de Bienes Raíces
+                                <ul class="content-list-inside">
+                                    <li>Licencia de Corredor de Valores</li>
+                                    <li>Registro Comercial</li>
+                                </ul>
+                            </li>
+                            <li>Registro Comercial</li>
+                            <li>Nulidad y Reposición de Acciones</li>
+                            <li>Documentos Negociables</li>
+                            <li>Registro de Hipoteca Naval
+                                <ul class="content-list-inside">
+                                    <li>Abanderamiento de Naves</li>
+                                    <li>Licencia de Navegación</li>
+                                </ul>
+                            </li>
+                            <li>Propiedad Horizontal
+                                <ul class="content-list-inside">
+                                    <li>Asesoría Externa a Bancos</li>
+                                </ul>
+                            </li>
+                            <li>Procesos de Seguros</li>
+                        </ul>
+                    </div>
+                    <div class="service-item">
+                        <h4>LABORAL: </h4>
+                        <ul class="content-list-servicios">
+                            <li>Convenciones Colectivas</li>
+                            <li>Asesoría a Patronos</li>
+                            <li>Terminación de Contrato de Trabajo</li>
+                            <li>Autorización de Despido</li>
+                            <li>Ejecuciones Laborales</li>
+                            <li>Arbitrajes </li>
+                        </ul>
+                    </div>
+                    <div class="service-item">
+                        <h4>MIGRATORIO: </h4>
+                        <ul class="content-list-servicios">
+                            <li>Permiso de Trabajo</li>
+                            <li>Permisos de Visitantes
+                                <ul class="content-list-inside">
+                                    <li>Visas y Prórrogas</li>
+                                </ul>
+                            </li>
+                            <li>Permisos Especiales</li>
+                            <li>Salvo Conducto</li>
+                            <li>Naturalización </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 list-container">
+                    <ul>
+                        <li><a href="{% url 'about_us' %}">Quiénes Somos</a></li>
+                        <li><a href="{% url 'services' %}">servicios</a></li>
+                        <li><a href="{% url 'consulting' %}">consulta legal</a></li>
+                        <li><a href="{% url 'courses' %}">capacitación</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 list-container">
+                    <ul>
+                        <li><a href="{% url 'contact_us' %}">contáctanos</a></li>
+                        <li><a href="#">notas legales</a></li>
+                        <li><a href="#">términos y condiciones</a></li>
+                        <li><a href="#">políticas de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="row center-block">
+                        <div class="col-md-12 logo-footer text-center"><img src="{% static 'img/logo-footer.png' %}" class="img-responsive center-block"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-md-push-1"><img src="{% static 'img/app-store.jpg' %}" class="center-block img-responsive"></div>
+                        <div class="col-md-6 col-md-pull-1"><img src="{% static 'img/google-play.jpg' %}" class="center-block img-responsive"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="social-networks-footer">
+                                <li class="social-networks-list-item"><a href="https://www.instagram.com/DdojaLegal/" target="blank"><i class="fa fa-instagram"></i></a></li>
+                                <li class="social-networks-list-item"><a href="https://www.facebook.com/DDOJA-Legal-Services-Consultants-1045311252276564/" target="blank"><i class="fa fa-facebook"></i></a></li>
+                                <li class="social-networks-list-item"><a href="https://twitter.com/DdojaLegal/" target="blank"><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>

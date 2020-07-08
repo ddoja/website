@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDOJA | Capacitación</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/inner-navs.css' %}">
+</head>
+
+<body>
+    <div class="social-networks">
+        <a href="https://www.instagram.com/DdojaLegal/" target="blank"><i class="fa fa-instagram" style="color:#504B40;"></i></a>
+        <a href="https://www.facebook.com/DDOJA-Legal-Services-Consultants-1045311252276564/" target="blank"><i class="fa fa-facebook" style="color:#504B40;"></i></a>
+        <a href="https://twitter.com/DdojaLegal/" target="blank"><i class="fa fa-twitter" style="color:#504B40;"></a></i>
+    </div>
+    <nav class="navbar navbar-default navbar-static-top inner-serction">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand navbar-link" href="{% url 'home' %}"><img src="{% static 'img/logo2.png' %}" class="brand-img"></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav nav-desktop">
+                    <li role="presentation"><a href="{% url 'home' %}">INICIO </a></li>
+                    <li role="presentation"><a href="{% url 'about_us' %}" class="inner-item">QUIENES SOMOS</a></li>
+                    <li role="presentation"><a href="{% url 'lawyers' %}">NUESTROS ASESORES</a></li>
+                    <li role="presentation"><a href="{% url 'services' %}">SERVICIOS </a></li>
+                    <li role="presentation"><a href="{% url 'consulting' %}">CONSULTA LEGAL</a></li>
+                    <li class="active" role="presentation"><a href="#">CAPACITACIÓN </a></li>
+                    <li role="presentation"><a href="{% url 'contact_us' %}">CONTÁCTANOS </a></li>
+                </ul>
+                <ul class="nav navbar-nav nav-tablet">
+                    <li role="presentation"><a href="{% url 'home' %}">INICIO </a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="{% url 'about_us' %}">QUIENES SOMOS<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="{% url 'about_us' %}">NOSOTROS </a></li>
+                            <li role="presentation"><a href="{% url 'lawyers' %}">NUESTROS ASESORES</a></li>
+                            <li role="presentation"><a href="{% url 'services' %}">SERVICIOS </a></li>
+                        </ul>
+                    </li>
+                    <li role="presentation"><a href="{% url 'consulting' %}">CONSULTA LEGAL</a></li>
+                    <li role="presentation"><a href="#">CAPACITACIÓN</a></li>
+                    <li role="presentation"><a href="{% url 'contact_us' %}">CONTÁCTANOS </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="content-img"><img src="{% static 'img/cursos-banner.jpg' %}" class="img-responsive"></div>
+    <div class="container">
+        <p class="content-description main-description">Realizamos estudios, foros, cursos relacionados con las áreas de nuestras competencias a firmas de abogados, abogados particulares y empresas públicas y privadas, para generar una cultura de conocimiento de la Ciencia del Derecho que contribuya
+            a desarrollar las competencias y habilidades técnicas de los juristas que contratan nuestros servicios, en aras de un ejercicio ético y responsable de la Abogacía.</p>
+    </div>
+    <div class="container">
+        <h4>PRÓXIMOS EVENTOS:</h4></div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col1">
+                    <ul class="courses-content-list">
+                        <li>CURSO SPA EXPERTO</li>
+                        <li>CYBER SECURITY</li>
+                        <li>RESPONSABILIDAD MÉDICA</li>
+                        <li>DERECHO DE PROBÁTICA</li>
+                        <li>BLANQUEO DE CAPITALES</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-2">
+                    <ul class="courses-content-list">
+                        <li>DERECHO DE LA ENERGÍA</li>
+                        <li>DERECHO DE LAS TELECOMUNICACIONES</li>
+                        <li>DERECHO ECOLÓGICO</li>
+                        <li>LIGITACIÓN ORAL</li>
+                        <li>COMPETENCIA ECONÓMICA</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-1">
+                    <ul class="courses-content-list">
+                        <li>DERECHO INFORMÁTICO</li>
+                        <li>DERECHO DEL TURISMO</li>
+                        <li>DERECHO CORPORATIVO</li>
+                        <li>DERECHO BANCARIO Y BURSATIL</li>
+                        <li>PROBÁTICA JURÍDICA</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-img"><img src="{% static 'img/banner-sap-experto.jpg' %}" class="img-responsive"></div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-2">
+                    <ul class="courses-content-list">
+                        <li>GARANTÍAS </li>
+                        <li>RESPONSABILIDAD PENAL</li>
+                        <li>RESPONSABILIDAD CIVIL DERIVADA DEL DELITO</li>
+                        <li>TIPOLOGÍA </li>
+                        <li>ROLES Y REGLAS</li>
+                        <li>ACCIÓN PENAL</li>
+                        <li>RESOLUCIONES JUDICIALES Y FORMAS</li>
+                        <li>PLAZOS, EFECTOS Y RECURSOS</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-1">
+                    <ul class="courses-content-list">
+                        <li>PROCEDIMIENTOS ALTERNOS</li>
+                        <li>CONTROL JUDICIAL</li>
+                        <li>MEDIDAS CAUTELARES</li>
+                        <li>INVESTIGACIÓN PENAL</li>
+                        <li>FASES PROCESALES, JUICIO ORAL Y OTROS PROCEDIMIENTOS</li>
+                        <li>MEDIOS DE PRUEBA</li>
+                        <li>PENAS Y EJECUCIÓN</li>
+                        <li>EXTRADICIÓN </li>
+                    </ul>
+                </div>
+                <div class="col-md-3"><img src="{% static 'img/publico.jpg' %}" class="public-img img-responsive"></div>
+            </div>
+        </div>
+    </div>
+    <div class="text-div">
+        <div class="container">
+            <h3><em>EXPERTOS NACIONALES E INTERNACIONALES</em></h3>
+            <p class="alternative-text">PRONTO MÁS DETALLES </p>
+            <p class="alternative-text">INTERESADOS ENVIAR CORREO ELECTRÓNICO A: INFO@CONSULTALEGALDDOJA.COM</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 list-container">
+                    <ul>
+                        <li><a href="{% url 'about_us' %}">Quiénes Somos</a></li>
+                        <li><a href="{% url 'services' %}">servicios</a></li>
+                        <li><a href="{% url 'consulting' %}">consulta legal</a></li>
+                        <li><a href="#">capacitación</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 list-container">
+                    <ul>
+                        <li><a href="{% url 'contact_us' %}">contáctanos</a></li>
+                        <li><a href="#">notas legales</a></li>
+                        <li><a href="#">términos y condiciones</a></li>
+                        <li><a href="#">políticas de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="row center-block">
+                        <div class="col-md-12 logo-footer text-center"><img src="{% static 'img/logo-footer.png' %}" class="img-responsive center-block"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-md-push-1"><img src="{% static 'img/app-store.jpg' %}" class="center-block img-responsive"></div>
+                        <div class="col-md-6 col-md-pull-1"><img src="{% static 'img/google-play.jpg' %}" class="center-block img-responsive"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="social-networks-footer">
+                                <li class="social-networks-list-item"><a href="https://www.instagram.com/DdojaLegal/" target="blank"><i class="fa fa-instagram"></i></a></li>
+                                <li class="social-networks-list-item"><a href="https://www.facebook.com/DDOJA-Legal-Services-Consultants-1045311252276564/" target="blank"><i class="fa fa-facebook"></i></a></li>
+                                <li class="social-networks-list-item"><a href="https://twitter.com/DdojaLegal/" target="blank"><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>

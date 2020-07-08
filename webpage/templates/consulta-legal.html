@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDOJA | Consulta legal</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/inner-navs.css' %}">
+</head>
+
+<body>
+    <div class="social-networks">
+        <a href="https://www.instagram.com/DdojaLegal/" target="blank"><i class="fa fa-instagram" style="color:#504B40;"></i></a>
+        <a href="https://www.facebook.com/DDOJA-Legal-Services-Consultants-1045311252276564/" target="blank"><i class="fa fa-facebook" style="color:#504B40;"></i></a>
+        <a href="https://twitter.com/DdojaLegal/" target="blank"><i class="fa fa-twitter" style="color:#504B40;"></a></i>
+    </div>
+    <nav class="navbar navbar-default navbar-static-top inner-serction">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand navbar-link" href="{% url 'home' %}"><img src="{% static 'img/logo2.png' %}" class="brand-img"></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav nav-desktop">
+                    <li role="presentation"><a href="{% url 'home' %}">INICIO </a></li>
+                    <li role="presentation"><a href="{% url 'about_us' %}" class="inner-item">QUIENES SOMOS</a></li>
+                    <li role="presentation"><a href="{% url 'lawyers' %}">NUESTROS ASESORES</a></li>
+                    <li role="presentation"><a href="{% url 'services' %}">SERVICIOS </a></li>
+                    <li class="active" role="presentation"><a href="#">CONSULTA LEGAL</a></li>
+                    <li role="presentation"><a href="{% url 'courses' %}">CAPACITACIÓN </a></li>
+                    <li role="presentation"><a href="{% url 'contact_us' %}">CONTÁCTANOS </a></li>
+                </ul>
+                <ul class="nav navbar-nav nav-tablet">
+                    <li role="presentation"><a href="{% url 'home' %}">INICIO </a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="{% url 'about_us' %}">QUIENES SOMOS<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="{% url 'about_us' %}">NOSOTROS </a></li>
+                            <li role="presentation"><a href="{% url 'lawyers' %}">NUESTROS ASESORES</a></li>
+                            <li role="presentation"><a href="{% url 'services' %}">SERVICIOS </a></li>
+                        </ul>
+                    </li>
+                    <li role="presentation"><a href="#">CONSULTA LEGAL</a></li>
+                    <li role="presentation"><a href="{% url 'courses' %}">CAPACITACIÓN </a></li>
+                    <li role="presentation"><a href="{% url 'contact_us' %}">CONTÁCTANOS </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="content-img"><img src="{% static 'img/consulta-legal-online.jpg' %}"></div>
+    <div class="content-div">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-md-push-1 content-description border-right">
+                    <h4>SOMOS ESPECIALISTAS EN CONSULTA LEGAL</h4>
+                    <p style="padding-right:10px;">Te ofrecemos nuestros servicios de consulta legal on line que te acompaña donde vayas y cuando tú lo solicites para conocer lo que debes hacer ante cualquier asunto legal. Haces tu consulta fácilmente y obtendrás la respuesta a tus
+                        dudas.</p>
+                </div>
+                <div class="col-md-5 col-md-push-1 content-description" style="margin-left:12px;">
+                    <h4>¿CÓMO FUNCIONA?</h4>
+                    <p>Porque valoramos tu tiempo, te brindamos asesoría, respuesta y profesionalismo, en tiempo record.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h4 class="text-center" style="margin-bottom:50px;">SELECCIONA CUALQUIERA DE NUESTRAS MODALIDADES DE CONSULTA:</h4>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-md-push-1 content-description border-right"><img src="{% static 'img/consulta-48.jpg' %}" class="img-responsive">
+                    <p style="margin-top:20px;">Con esta modalidad tienes la oportunidad de realizar tu consulta de manera amplia, seleccionando el área legal en el cual necesitas asesoría. Completa tus datos en el formulario con la descripción precisa de tu consulta acompañada
+                        de hasta 10 preguntas. </p>
+                    <p>Tan pronto realizas el pago, tu consulta será enviada a nuestros asesores expertos y recibiras respuesta a tu correo electrónico dentro de las 48 horas hábiles siguientes o, si gustas, previa cita en nuestras oficinas. </p>
+                    <div class="consulting-btn text-center">
+                        <a href="{% url 'online_consulting' %}"><img src="{% static 'img/consulta-legal-btn.png' %}"></a>
+                    </div>
+
+                </div>
+                <div class="col-md-5 col-md-push-1 content-description" style="margin-left:12px;"><img src="{% static 'img/consulta-chat.jpg' %}" class="img-responsive">
+                    <p style="margin-top:20px;">Como servicio adicional para nuestros clientes, podrán realizar preguntas ingresando a cualquiera de nuestras plataformas tecnológicas.</p>
+                    <p>Busca la ventana de chat en la esquina inferior derecha. Tienes la oportunidad de absolver tus dudas en línea.</p>
+                    <h4>HORARIO DE ATENCIÓN</h4>
+                    <h4>LUNES A VIERNES </h4>
+                    <h4>10:00 AM A 1:00 PM</h4>
+                    <h4>3:00 PM A 7:00 PM</h4>
+                    <h4><span class="strong-text">(PARA SER ATENDIDO EN TIEMPO REAL DEBES REALIZAR TU CONSULTA DENTRO DEL HORARIO DE ATENCIÓN)</span></h4></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 list-container">
+                    <ul>
+                        <li><a href="{% url 'about_us' %}">Quiénes Somos</a></li>
+                        <li><a href="{% url 'services' %}">servicios</a></li>
+                        <li><a href="{% url 'consulting' %}">consulta legal</a></li>
+                        <li><a href="{% url 'courses' %}">capacitación</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 list-container">
+                    <ul>
+                        <li><a href="{% url 'contact_us' %}">contáctanos</a></li>
+                        <li><a href="#">notas legales</a></li>
+                        <li><a href="#">términos y condiciones</a></li>
+                        <li><a href="#">políticas de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="row center-block">
+                        <div class="col-md-12 logo-footer text-center"><img src="{% static 'img/logo-footer.png' %}" class="img-responsive center-block"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-md-push-1"><img src="{% static 'img/app-store.jpg' %}" class="center-block img-responsive"></div>
+                        <div class="col-md-6 col-md-pull-1"><img src="{% static 'img/google-play.jpg' %}" class="center-block img-responsive"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="social-networks-footer">
+                                <li class="social-networks-list-item"><a href="https://www.instagram.com/DdojaLegal/" target="blank"><i class="fa fa-instagram"></i></a></li>
+                                <li class="social-networks-list-item"><a href="https://www.facebook.com/DDOJA-Legal-Services-Consultants-1045311252276564/" target="blank"><i class="fa fa-facebook"></i></a></li>
+                                <li class="social-networks-list-item"><a href="https://twitter.com/DdojaLegal/" target="blank"><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>
